@@ -3,4 +3,4 @@
 
 
 
-[Image of rFlix Custom Video Player](https://i.ibb.co/K9MWd0F/player.png)
+![Image of rFlix Custom Video Player](https://i.ibb.co/K9MWd0F/player.png)
