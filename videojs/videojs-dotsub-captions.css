@@ -1,0 +1,7 @@
+/**
+ * videojs-dotsub-captions
+ * @version 0.1.1
+ * @copyright 2016 Brooks Lyrette <brooks@dotsub.com>
+ * @license Apache-2.0
+ */
+.video-js.vjs-dotsub-captions{display:block}.video-js.vjs-dotsub-captions .vjs-caption-containter{opacity:0.99;position:absolute;width:100%;padding:0 15px;-webkit-transition:bottom 1s;-moz-transition:bottom 1s;-ms-transition:bottom 1s;-o-transition:bottom 1s;transition:bottom 1s}.video-js.vjs-dotsub-captions .vjs-caption-containter .vjs-caption{color:#fff;font-size:2em;padding:5px 0}.video-js.vjs-dotsub-captions .vjs-caption-containter .vjs-caption .vjs-text{display:inline-block;background-color:rgba(0,0,0,0.7);padding:8px;border-radius:5px}.video-js.vjs-dotsub-captions .vjs-caption-containter .vjs-caption .vjs-text b{font-weight:800}

@@ -22,12 +22,12 @@
     <link href="/videojs/video-js.min.css" rel="stylesheet"/>
     
     <link href="/videojs/index.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/videojs/videojs-seek-buttons.css">
     
     <script src="/videojs/video.min.js"></script>
 
-    <script src="/videojs/videojs-ie8.min.js"></script>
-
-    <link rel="stylesheet" href="/videojs/videojs-seek-buttons.css">
+    <script src="/videojs/videojs-ie8.min.js"></script> 
     
   
 </head>
@@ -41,27 +41,24 @@
 
                   <div class="d-flex justify-content-center">
                   <div class="shadow-lg p-3 mb-5 bg-black rounded">
-                            <video id="playerjs" class="video-js" width="902px" height="530px"
-                                 controls preload="metadata"
+                            <video id="rflix-player" class="video-js" crossorigin="anonymous" width="902px" height="530px"
+                                 controls preload="auto"
                                  data-setup='{  "playbackRates": [0.2,0.5,1, 1.5, 2] }'>
                              
                              
                              
-                    <source src="//vjs.zencdn.net/v/oceans.webm" type="video/mp4" /> 
-                               
-              
-              
+                    <source src="//d2zihajmogu5jn.cloudfront.net/elephantsdream/ed_hd.mp4" type="video/mp4" /> 
+                    <track kind="captions" src="captions.vtt" srclang="en" label="English">
+    
                              </video>
               
-          
+                            
                             
                   </div>        
               </div>
          
 
                                                               <!--Plugins -->
-
-
                                 
               <script src="/videojs/videojs.hotkeys.min.js"></script>
 
@@ -73,7 +70,7 @@
               
                <script>
                   (function(window, videojs) {
-                    var rflixPlayer = window.rflixPlayer = videojs('playerjs');
+                    var rflixPlayer = window.rflixPlayer = videojs('rflix-player');
                     var seekButtons = window.seekButtons = rflixPlayer.seekButtons({
                       forward: 5,
                       back: 5
@@ -83,7 +80,7 @@
               
                               <!-- hotkeys   -->
               <script>
-                             videojs('playerjs').ready(function() {
+                  videojs('rflix-player').ready(function() {
                    this.hotkeys({
                   volumeStep: 0.1,
                   seekStep: 5,
@@ -94,7 +91,7 @@
               </script>
               
  
-
+    
   </body>
 
 
